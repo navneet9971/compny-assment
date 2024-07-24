@@ -1,0 +1,9 @@
+Before you can run this project locally, you need to have Visual Studio Code (VS Code) installed on your computer, along with the Live Server extension for VS Code.
+
+
+
+Right-click on the index.html file and select 'Open with Live Server.' This action will open your default web browser and display the HTML file, along with any linked CSS and JavaScript files, in a live environment. Any changes you make to the HTML, CSS, or JavaScript files will automatically be reflected in the browser.
+
+
+
+Created By Navneet Kumar

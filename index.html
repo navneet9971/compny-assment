@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Interview Design</title>
+</head>
+
+<body class="container">
+
+    <div class="background"></div>
+
+    <nav class="main-nav">
+
+        <div class="custom-navbar">
+            <a href="#" class="logo nav-name">Join Onespace Interior</a>
+            <a href="#home" class="nav-name">Visit Our Experience Center</a>
+            <a href="#services" class="nav-name">Become our associate</a>
+            <a href="#about" class="nav-name">PR and Magazines</a>
+
+            <div class="nav-btn">
+                <h1 class="nav-title">INDIA</h1>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav-second">
+        <ul class="nav-list">
+            <img src="./img/logo.png" alt="Company Logo" class="company-logo">
+            <li><a href="#home"><i class="icon-home"></i> Interior</a></li>
+            <li><a href="#services"><i class="icon-services"></i> Studio</a></li>
+            <li><a href="#about"><i class="icon-about"></i> Homes</a></li>
+            <li class="auth-links">
+                <a href="#login"><i class="icon-contact"></i> Login</a> l <a href="#signup"><i class="icon-contact"></i>
+                    Signup</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Form container start here  -->
+    <div class="main-div-form">
+
+
+        <div class="form-container">
+            <h2>Enter the Loan Details</h2>
+            <div class="form-group">
+                <select id="property-amount">
+                    <option value="" disabled selected>Select Property Amount</option>
+                    <option value="100000">₹ 1,00,000</option>
+                    <option value="500000">₹ 5,00,000</option>
+                    <option value="1000000">₹ 10,00,000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="city">
+                    <option value="" disabled selected>Select City</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="pincode" placeholder="Enter Pincode">
+            </div>
+            <div class="form-group question">
+                <label>Property Identified</label>
+                <div class="options">
+                    <button type="button" id="yes-button" class="option-button">Yes</button>
+                    <button type="button" id="no-button" class="option-button">No</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" id="submit-button" class="submit-button" disabled>Add Personal Details</button>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/girls.png" alt="girl-img" class="girls-icon" />
+            <div class="scroll-lines">
+                <div class="scroll-desgin" data-info="info1"></div>
+                <div class="scroll-desgin" data-info="info2"></div>
+                <div class="scroll-desgin" data-info="info3"></div>
+            </div>
+            <h1 class="girls-title">Calculate your EMI</h1>
+            <h4 class="girls-subtitle">Use Realezi EMI calculator to calculate your monthly EMI</h4>
+        </div>
+
+    </div>
+
+
+    <!--------------------- Start Second Section Here  ------------------->
+
+    <h1 class="loan-title">Home Loan EMI Calculator</h1>
+
+    <div class="second-secton-head-main">
+        <div class="second-section-main">
+
+
+
+            <div class="second-section-left">
+
+                <div class="second-loan">
+                    <p class="second-loan-amount">Loan amount</p>
+                    <p class="second-loan-money" id="loan-amount-display">₹30079</p>
+                </div>
+                <div class="second-section-slider">
+                    <input type="range" id="loan-amount-slider" class="second-slider" min="1000" max="1000000"
+                        step="1000" value="30079">
+                </div>
+
+                <div class="second-rate">
+                    <p class="second-rate-amount">Loan Rate of Interest (%)</p>
+                    <p class="second-rate-money" id="loan-rate-display">6.5%</p>
+                </div>
+                <div class="second-section-slider">
+                    <input type="range" id="loan-rate-slider" class="second-slider" min="1" max="20" step="0.1"
+                        value="6.5">
+                </div>
+
+                <div class="second-tenure">
+                    <p class="second-tenure-amount">Loan Tenure </p>
+                    <p class="second-tenure-money" id="loan-tenure-display">5Yr</p>
+                </div>
+                <div class="second-section-slider">
+                    <input type="range" id="loan-tenure-slider" class="second-slider" min="1" max="30" step="1"
+                        value="5">
+                </div>
+
+                <div class="responsive-second">
+                    <div class="second-monthly">
+                        <p class="second-monthly-amount">Monthly EMI </p>
+                        <p class="second-monthly-money" id="monthly-emi">₹19,566</p>
+                    </div>
+
+                    <div class="second-principal">
+                        <p class="second-principal-amount">Principal amount</p>
+                        <p class="second-principal-money" id="principal-amount">₹10,00,000</p>
+                    </div>
+
+                    <div class="second-interset">
+                        <p class="second-interset-amount">Total Interest </p>
+                        <p class="second-interset-money" id="total-interest">₹1,73,969</p>
+                    </div>
+
+                    <div class="second-total-amount">
+                        <p class="second-total-amount-amount">Total amount </p>
+                        <p class="second-total-amount-money" id="total-amount">₹11,73,969</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="second-section-right">
+                <div class="graph-data-main">
+                    <div class="graph-color">
+                        <div class="color-principal-amount"></div>
+                        <p class="principal-color-name">Principal amount</p>
+
+                        <div class="color-interset-amount"></div>
+                        <p class="interest-color-name">Interest amount</p>
+                    </div>
+
+                    <div class="donut-chart" id="donut-chart">
+                        <div class="donut-inner"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="apart-section">
+
+                <div class="appart-upside">
+
+
+                    <p class="uper-bloges">
+                        Blogs
+                    </p>
+
+                    <div class="appart-child-blogs">
+                        <div class="taj-pics-text">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+
+                            <p class="taj-blogs">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="taj-pics-text-more">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+                            <p class="taj-blogs-more">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="taj-pics-text-more">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+                            <p class="taj-blogs-more">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="appart-downside">
+                    <p class="down-news">
+                        News
+                    </p>
+
+
+                    <div class="appart-child-blogs">
+                        <div class="taj-pics-text">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+
+                            <p class="taj-blogs">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="taj-pics-text-more">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+                            <p class="taj-blogs-more">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="taj-pics-text-more">
+                            <img src="./img/taj.png" alt="taj" class="taj-img" />
+                            <p class="taj-blogs-more">
+                                Walk through 10 mind-blowing heritage monuments
+                            </p>
+                            <p class="more-text">
+                                Read More
+                                <img src="./img/read.png" alt="read" class="read-more-arrow" />
+                            </p>
+
+                            <div class="above-img-taj">
+                                <p class="above-image-text">
+                                    Heritage
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="extra-second-section">
+        <p class="details-second">Your Amortization Details (Yearly/Monthly)
+        </p>
+        <img src="./img/plus.png" alt="plus" class="plus" />
+    </div>
+
+
+
+
+    <!-------------------------- Start Third Section Here ------------------------------------->
+    <h1 class="third-title">The Way We Work</h1>
+    <div class="center-container">
+
+        <div class="container-third">
+            <div class="box">
+                <div class="number">1</div>
+                <div class="content">
+                    <p>Compare various bank offers</p>
+                    <img src="./img/checklist.png" alt="Image 1">
+                </div>
+            </div>
+            <div class="box">
+                <div class="number">2</div>
+                <div class="content">
+                    <p>Share your details & apply to
+                        one or multiple banks</p>
+                    <img src="./img/checklist.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="box">
+                <div class="number">3</div>
+                <div class="content">
+                    <p>Sit back and relax & wait for banks to contact you</p>
+                    <img src="./img/checklist.png" alt="Image 3">
+                </div>
+            </div>
+            <div class="box">
+                <div class="number">4</div>
+                <div class="content">
+                    <p>Avail Home Loan</p>
+                    <img src="./img/checklist.png" alt="Image 4">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 class="third-title">Eligibility Calculator</h1>
+    <div class="fourth-container">
+        <div class="salary-container">
+            <div class="salary-input">
+                <label class="fourth-scroll-title" for="yearly">Yearly monthly salary (INR)</label>
+                <p id="salary-month" class="salary-example-tenure">₹20k</p>
+            </div>
+            <div class="salary-input">
+                <input type="text" class="salary-put" placeholder="₹25,000" />
+                <p class="salary-end">₹2cr+</p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <input id="salary-slider" type="range" class="salary-slider-month" min="0" max="1000000" step="1000" />
+            <div class="triangle"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="fourth-container">
+        <div class="salary-container">
+            <div class="salary-input">
+                <label class="fourth-scroll-title" for="yearly">Tenure (Years)</label>
+                <p id="tenure-value" class="salary-example-tenure">2 years</p>
+            </div>
+            <div class="salary-input">
+                <input type="text" class="salary-put" placeholder="₹20" />
+                <p class="salary-end">30 years</p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <input id="tenure-slider" type="range" class="salary-slider" min="0" max="30" step="1" />
+            <div class="triangle"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="fourth-container">
+        <div class="salary-container">
+            <div class="salary-input">
+                <label class="fourth-scroll-title" for="yearly">Interest Rates (%PA)</label>
+                <p id="interest-value" class="salary-example-interest">6%</p>
+            </div>
+            <div class="salary-input">
+                <input type="text" class="salary-put" placeholder="6.2" />
+                <p class="salary-end">30%</p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <input id="interest-slider" type="range" class="interest-slider" min="6" max="30" step="1" />
+            <div class="triangle"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="fourth-container">
+        <div class="salary-container">
+            <div class="salary-input">
+                <label class="fourth-scroll-title" for="yearly">Other monthly EMI’s INR</label>
+                <p id="emi-value" class="salary-example-emi">₹0</p>
+            </div>
+            <div class="salary-input">
+                <input type="text" class="salary-put" placeholder="₹25,000" />
+                <p class="salary-end">₹2Cr+</p>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <input id="emi-slider" type="range" class="emi-slider" min="0" max="1000000" step="1000" />
+            <div class="triangle"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+
+    <div class="fourth-box-perent">
+        <div class="fourth-money-box">
+            <p class="money-box-title ">Home loan Eligibility</p>
+            <p class="money-box-title-rupee">₹0</p>
+
+            <p class="money-box-emi-title">Monthly EMI</p>
+            <p class="money-box-title-emi-rupee">₹0</p>
+        </div>
+    </div>
+
+    <div class="fourth-box-button">
+        <button class="fourth-box-button-emi">Calculate EMI</button>
+        <button class="fourth-box-button-home-loan">Apply for Home Laon</button>
+    </div>
+
+
+
+
+    <!-------------- Fifth Section they will customer review ------------------------>
+    <div class="fifth-section-review">
+
+        <div class="fifth-section-title">
+            <h1 class="fifth-title">What our Customers say</h1>
+        </div>
+
+        <div class="customer-review-main">
+            <div class="customer-says-scroll">
+
+                <div class="customer-profile">
+
+                    <div class="profile-pics">
+                        <img src="./img/profile.png" alt="girl" class="profile-image" />
+                        <div class="customer-name-work">
+                            <p class="customer-name">Debojyoti Ghosh</p>
+                            <p class="customer-city"> Pune </p>
+                        </div>
+                    </div>
+
+                    <div class="custom-star">
+                        <img src="./img/star.png" alt="star" class="star-image" />
+                        <p class="rating">5</p>
+                    </div>
+
+                </div>
+
+                <div class="customer-text-main">
+                    <p class="customer-text-review">We applied for a joint Home Loan with realezi for our new House in
+                        Pune. Liked the services and offers.</p>
+                </div>
+
+                <div class="arrow-sign" onclick="nextReview()">
+                    <img src="./img/next.png" alt="next" class="arrow-sign" />
+                </div>
+            </div>
+
+            <div class="cursor-pointer-review">
+                <div class="cursor-circle active"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+                <div class="cursor-circle"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--------- Sixth section of navbar ----------->
+
+    <div class="main-floting-nav">
+        <div class="floting-nav">
+            <ul>
+                <li><a href="https://www.urbanmoney.com/home-loan" target="_blank" rel="noopener noreferrer">Buying Process</a></li>
+                <li><a href="#about">Home Loan Eligibility </a></li>
+                <li><a href="#services">Home Loan Documents</a></li>
+                <li><a href="#how-it-works">Property Documents</a></li>
+                <li><a href="#eligibility-calculator">Home Loan Eligibility Requirements</a></li>
+                <li><a href="#customer-review">FAQs</a></li>
+                <button class="apply-button">Apply Now</button>
+            </ul>
+        </div>
+    </div>
+
+
+<!-- Apply Now POPup form Button ---------------- -->
+  <div id="applyModal" class="modal">
+    <div class="modal-content">
+      
+        <div class="form-container">
+            <span class="close">&times;</span>
+            <h2>Enter the Loan Details</h2>
+            <div class="form-group">
+                <select id="property-amount">
+                    <option value="" disabled selected>Select Property Amount</option>
+                    <option value="100000">₹ 1,00,000</option>
+                    <option value="500000">₹ 5,00,000</option>
+                    <option value="1000000">₹ 10,00,000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="city">
+                    <option value="" disabled selected>Select City</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="pincode" placeholder="Enter Pincode">
+            </div>
+            <div class="form-group question">
+                <label>Property Identified</label>
+                <div class="options">
+                    <button type="button" id="yes-button" class="option-button">Yes</button>
+                    <button type="button" id="no-button" class="option-button">No</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="button" id="submit-button" class="submit-button-popup" >Add Personal Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <!----------- Seventh Section Full of Text section ---------------------------->
+
+    <div class="seventh-section-text">
+
+        <h1 class="sevent-section-title">Home Loan Buying Process</h1>
+
+        <div class="sevent-main-text-container">
+            <p class="seventh-main-text">
+                Investing in your dream home is one of the most crucial decisions of your life. This is precisely why
+                your research should be thorough before you get into a long-term repayment commitment with a lender.
+                Here is a quick step-by-step guide on the process of availing of a home loan – from the point of
+                application to the point of disbursal of the amount.
+            </p>
+
+            <div class="video-container">
+                <div class="video-thumbnail" id="video-thumbnail">
+                    <a href="javascript:void(0)" class="youtube-link" onclick="playVideo()">
+                        <svg class="youtube-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+
+                            <path
+                                d="M23.498 6.186c-.286-1.067-1.125-1.903-2.194-2.19C19.208 3.5 12 3.5 12 3.5s-7.208 0-9.304.496c-1.069.287-1.907 1.123-2.194 2.19C.5 8.26.5 12.004.5 12.004s0 3.744.496 5.818c.286 1.067 1.125 1.903 2.194 2.19 2.096.496 9.304.496 9.304.496s7.208 0 9.304-.496c1.069-.287 1.907-1.123 2.194-2.19.496-2.074.496-5.818.496-5.818s0-3.744-.496-5.818zM9.973 15.482V8.522l6.545 3.48-6.545 3.48z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="video-iframe" id="video-iframe">
+                    <iframe class="yt-video" width="950" height="490" src="https://www.youtube.com/embed/CHSnz0bCaUk"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+            <p class="seventh-main-para">In this video, we are going to talk about the process of availing a home loan.
+                As a homebuyer, you should know where this process comes in place in the entire home buying journey,
+                what is a loan application and how should you fill it, when and how to negotiate, thus giving you an
+                entire roadmap on the process of availing a home loan so that you can save both time and money.
+            </p>
+
+
+            <p class="seventh-main-custom-title">
+                Step 1: Finalise the property
+            </p>
+
+            <p class="seventh-main-custom-para">There are two types of property that you can buy- ready-to-move and
+                under-construction. In both cases, loan agreement and loan disbursal stage, which are the final step,
+                varies slightly. We’ll talk about it when we come to it. In the first stage, if you are not buying the
+                property with 100% cash, you will require a home loan. So, finalise your property and get set for loan
+                shopping.
+            </p>
+
+
+            <p class="seventh-main-custom-title">
+                Step 2: Filling up loan application
+            </p>
+
+            <div class="step-2-custom-para">
+                <p class="step-2-custom-first">
+                    Once you have finalised the property, homebuyers need to fill a loan application. Homebuyers should
+                    enquire about various offers, home loan interest rates, documents required at this stage. At this
+                    stage, you can also negotiate the processing fee with the bank.
+                </p>
+
+                <p class="step-2-custom-para-second">
+                    You can start a loan inquiry. For this, you should start comparing interest rates online. This is
+                    the easiest way to understand the bank that will provide you the best and lowest home loan interest
+                    rate. You can also find all the details on the dedicated home loan page on Housing.com. Post this,
+                    you can directly generate an inquiry with the bank either by approaching the nearest bank branch or
+                    using the bank’s website.
+                </p>
+
+                <p class="step-2-custom-para-third">
+                    During the inquiry, you can negotiate for the best available rates. Many homebuyers do not know that
+                    the home loan interest rate is negotiable. On the basis of your good credit score and income, banks
+                    can give you a good interest rate as well. So be aware and ask for it at this stage before it's too
+                    late.
+                </p>
+
+                <p class="step-2-custom-para-fourth">
+                    At this stage, you should also know that an additional expenditure also comes in the form of
+                    processing fee which can be anywhere up to 1% of your loan amount. This is also negotiable and most
+                    banks will agree for anything between 0.25-0.5% of the loan amount as processing fee.
+                </p>
+
+                <p class="step-2-custom-para-fifth">
+                    You will also have to pay a fee for due diligence that the bank will do for you. It may happen that
+                    banks lower the processing fee but ask you for a higher charge for due diligence. It is important
+                    that you clarify this early on, to avoid spending more than what your budget permits.
+                </p>
+
+                <p class="step-2-custom-para-six">
+                    The next step is related to documents. Salaried and self-employed borrowers need to provide separate
+                    documents to the bank so that the bank can assess the financial health of the homebuyer. You can
+                    refer to the list below. Some of the common documents included are as follows. You can keep these
+                    ready whenever you proceed to apply for a home loan. Remember that you should pay the processing fee
+                    only to the bank that you feel is giving the best interest rate.
+                </p>
+
+            </div>
+
+
+            <p class="setp-3-start">
+                List of documents common for both salaried and self-employed individuals:
+            </p>
+
+            <ol class="step-3-custom-list">
+                <li>Loan Application form (completely filled)</li>
+                <li>Passport size photographs</li>
+                <li>Identity Proof Documents Such as PAN Card, Driving License, Passport, Voter ID Card, etc.</li>
+                <li>Residence Proof such as electricity, water or telephone bill, ration card or any other
+                    government-issued ID proof that contains your residential address.</li>
+                <li>Copy of bank account statement/passbook entries for the past 6 months</li>
+                <li>Signature Identification proof from current bankers</li>
+                <li>Statement of Personal Assets and Liabilities</li>
+            </ol>
+
+
+            <p class="step-4-table-title">
+                List of documents that are different for salaried and self-employed individuals. This may change from
+                time to time or depending on the bank.
+            </p>
+
+
+            <table class="step-4-custom-table">
+                <tr>
+                    <th>Salaried Individuals</th>
+                    <th>Self-Employed Individuals</th>
+                </tr>
+                <tr>
+                    <td>Original Salary Certificate from Employer/Last 3 months salary slips</td>
+                    <td>Acknowledged copies of Income tax returns/assessment orders for the previous 3 months</td>
+                </tr>
+                <tr>
+                    <td>TDS Certificate of Form 16 or Copy of Income Tax returns for the last 2 fiscals</td>
+                    <td>Photocopies of challans as evidence of advance income tax payments</td>
+                </tr>
+                <tr>
+                    <td>Proof of job stability from the current employer</td>
+                    <td>Proof of business continuity</td>
+                </tr>
+                <tr>
+                    <td>In case the salaried employee has changed jobs in the last 1 year, copies of the offer and
+                        joining letter of the new company need to be submitted.</td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+
+            <p class="setp-3-main-title">
+                Step 3: Bank's due diligence
+            </p>
+
+            <div class="step-3-main-paragraph">
+                <p>
+                    Banks will not give you a home loan without assessing your financial background, your repaying
+                    capacity, the legality of the property, and other details based on their field investigation. This
+                    is the next step where the bank does due diligence.
+                </p>
+
+                <p>
+                    Your bank statements, savings, transactions, investments, business activity, credit and repayments,
+                    bank balance, cheque bounces - all these are studied by the bank. Now suppose that your cheques have
+                    bounced or been returned in the past- this can lead to ineligibility to get a home loan. The bank
+                    also studies your liabilities and loans.
+                </p>
+
+                <p>
+                    After this, the bank sees your net income and credit score. A score of 750 and above indicates a
+                    healthy credit score and banks are usually willing to give you a better (lower) interest rate.
+                </p>
+
+                <p>
+
+                    Not just financial health, banks also check your personal details through a field investigation
+                    where they check your residential address and contact details. A bank representative may visit your
+                    home to confirm such details. Do note that the nature and sector of your job also impact and
+                    determines whether you are eligible for a home loan. For example, sectors where there is a risk of
+                    job loss or instability, high attrition, are often not considered good. The field representative
+                    usually determines this.
+                </p>
+
+                <p>
+
+                    The property that you are going to buy is also checked. The property’s condition, quality,
+                    encroachments, valuation- all these aspects are checked by the bank. If the property is under
+                    construction, then the construction progress, its quality, building plan, and layout are also
+                    carefully examined. This is the technical due-diligence stage.
+                </p>
+
+                <p>
+                    Next is the legal due diligence stage. Ownership and encumbrance related documents are checked. In
+                    the case of unestablished ownership or a third party’s claim on the property, banks do not approve
+                    of the home loan. This is also one of the reasons why taking a home loan is beneficial in many ways.
+                    Banks check the entire title deed, possession certificate, sale agreement, etc. It will help you
+                    make an informed decision. Even in the case of an under-construction property, banks study and
+                    examine land ownership, allotment letters, builder-buyer agreement, project approval documents, etc.
+                </p>
+            </div>
+
+            <p class="step-4-main-title">
+                Step 4: Estimating your creditworthiness and loan eligibility
+            </p>
+
+
+            <div class="step-4-main-paragraph">
+                <p>
+                    Once banks establish that the property you are interested in is sound and free of legal hassles, it
+                    does a deep-dive into your creditworthiness. For this, banks study your repayment history and check
+                    for defaults. You can even get a higher loan amount in case you have been able to maintain a good
+                    credit score, throughout.
+                </p>
+                <p>
+                    At this stage, banks assess your EMI repayment capacity based on your income and liabilities, if
+                    any. For example, Amit has an income of Rs 50,000 per month and a car loan liability of Rs 10,000
+                    per month. The total disposable income of Amit is Rs 40,000 per month. Banks consider it good if
+                    your EMI is not more than 50% of your disposable income. In this case, therefore, Amit can spend Rs
+                    20,000 per maximum as EMI, and therefore, the home loan sanctioned may roughly be between Rs 20-25
+                    lakh. It depends on different banks, how they assess and calculate your repayment capacity. In
+                    short, banks check the Loan to Value ratio and do not sanction more than 80-90 %. It also checks
+                    your income, age, company, nature of work, etc to calculate your home loan eligibility.
+                </p>
+
+            </div>
+
+
+            <p class="step-4-main-title">
+                Step 5: Accepting the offer letter
+            </p>
+
+            <div class="step-5-paragraph">
+                <p>
+                    After various checks, the bank sends you an offer letter with the final loan amount mentioned in it.
+                    If you sign, it is considered as accepted formally. You can then sign the loan agreement. After
+                    this, the bank hands over the DD to the seller and you can take possession of the property.
+
+                </p>
+
+                <p>
+                    The offer letter clearly mentions the sanctioned loan amount, rate of interest- whether fixed or
+                    variable. Fixed interest rates are higher than variable but even fixed is not altogether a fixed
+                    rate, these could be floating rates as well and could be fixed for a certain period. It totally
+                    depends on you whether you choose, fixed and floating rate or variable. The offer letter also
+                    mentions the tenure, number of EMIs to be paid, mode of repayment whether post-dated cheques or
+                    electronic clearing; schemes availed such as PMAY or bank offers, validity, terms, and conditions,
+                    etc. You should sign the offer letter only if you are satisfied with the offer. Do remember to check
+                    the sanctioned amount.
+                </p>
+
+                <p>
+
+                    Pro Tip: If you can arrange some finances from friends and family, you can also ask the bank to
+                    reduce the loan amount sanctioned.
+                </p>
+
+                <p>
+
+                    The next step is the loan agreement. All borrowers need to sign it in case of a joint home loan. If
+                    you have planned to opt for post-dated cheques as repayment option, banks collect cheques equivalent
+                    to the loan amount at this stage, for security.
+                </p>
+
+                <p>
+                    In the case of an under-construction property, the process is slightly different. A tripartite
+                    agreement is signed at this stage between the bank, borrower, and builder.
+                </p>
+
+                <p>
+                    The loan disbursement stage for an under-construction property is different and depends on the
+                    progress of construction. Accordingly, the bank pays the builder directly and all the original
+                    documents are collected from you by the bank.
+                </p>
+
+                <p>
+                    The sale deed is signed in the case of a ready-to-move property. The day it is signed, the DD is
+                    directly handed over to the seller. Prior to this, the bank will check whether you have made any
+                    down payment and whether the sale deed has been registered at the sub-registrar’s office. Even in
+                    ready-to-move property, banks keep all the original property papers. Do keep photocopies of all the
+                    documents that you have submitted in the bank.
+                </p>
+            </div>
+
+
+
+            <div class="step-6-main-container">
+
+                <div class="step-6-left-side">
+                    <p>
+                        The Application
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Documentation
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Processing fee
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Evaluation and personal discussion
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Bank investigation
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Sanctioning of loan after your creditworthiness has been established
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Assessment and valuation of the property
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Registration process/ signing the loan agreement
+                    </p>
+                    <div class="step-6-bottom-line"></div>
+                    <p>
+                        Disbursement of loan amount
+                    </p>
+                </div>
+
+                <div class="step-6-rigt-side-main">
+                    <img src="./img/arrow-icon.png" alt="arow" class="arrow-icon" />
+
+                    <div class="step-6-right-side">
+                        <p>
+                            The application process begins with you filling out a form in which you disclose vital
+                            personal and professional information, your assets and liabilities, the property details (in
+                            case it has been finalized already) and its estimated cost. The application form may differ
+                            in format from lender to lender, but basically it seeks similar information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <p class="step-4-main-title">
+                What is Home Loan Eligibility?
+            </p>
+
+            <div class="step-7-main-paragraph">
+                <p>
+                    Home loan eligibility is defined as a set of criteria basis which a financial institution assesses
+                    the creditworthiness of a customer to avail and repay a particular loan amount. Home loan
+                    eligibility depends on criteria such as age, financial position, credit history, credit score, other
+                    financial obligations etc.
+                </p>
+            </div>
+
+
+            <p class="step-4-main-title">
+                Home Loan Documents
+            </p>
+
+            <div class="step-8-main-paragraph">
+                <p>
+                    The lender has to assess your financial health before it decides that you are mortgage worthy.
+                    Further, it's a sizable amount to be repaid over the long term by you and the lender must know that
+                    you will be able to service your loan diligently through the tenure.
+                </p>
+
+                <p>
+                    In order to judge your credit worthiness, your prospective lender will therefore ask you to submit a
+                    host of documents. The following are the documents you need in you home loan application file.
+                </p>
+            </div>
+
+
+            <p class="step-4-main-title">
+                Property Documents
+            </p>
+
+            <div class="step-9-main-paragraph">
+                <p>If a flat is being purchased from the builder</p>
+
+                <p>If the property being purchased is located in a Cooperative Society</p>
+
+                <p>If you are constructing a house on own land</p>
+
+                <p>Putting together these documents may seem like an arduous task to you, but do go through the
+                    documentation process properly to ensure that there are no gaps from your end that may be the cause
+                    of your loan application getting rejected.</p>
+            </div>
+
+
+            <p class="step-4-main-title">
+                Home Loan Fees and Charges
+            </p>
+
+            <div class="step-10-main-paragraph">
+                <p>
+                    When you are comparing lenders and checking out home loan options, you should not only look at
+                    interest rate comparisons but also the various other fees and charges. Some of these charges need to
+                    be paid upfront while you are taking the loan while other charges are levied during the tenure of
+                    your loan. While negotiating with lenders, you should have a clear idea about the various other
+                    charges so that you can negotiate well and get the maximum benefits. Here is a checklist on charges
+                    that will come in handy when you are shopping for a home loan:
+                </p>
+
+                <p>
+                    While shopping for your home loan, you must clarify and negotiate on each of these charges with your
+                    lender, so that there are no nasty surprises later.
+                </p>
+            </div>
+
+
+            <p class="step-4-main-title">
+                Home Loan Eligibility Requirements
+            </p>
+
+            <div class="step-11-main-paragraph">
+                <p>
+                    A lender needs proof to establish your repayment capability. For this, it will take a thorough
+                    look not just as your income statements but also your assets and liabilities and your credit
+                    history.
+                </p>
+
+                <p>
+                    The standard method banks use to assess your home loan eligibility is the application of FOIR (fixed
+                    obligation to income ratio) of a borrower. To calculate the FOIR, the lender takes into
+                    consideration all the other monthly instalments a borrower is paying including the home loan that he
+                    has applied for. However, the statutory deductions from your salary like provident fund, insurance
+                    premium payments are not taken into consideration in this calculation.
+                </p>
+
+                <p>
+                    Suppose the income of a prospective borrower is Rs 50,000 per month.
+                </p>
+
+                <p>
+                    He pays a car loan EMI of Rs 8,000 per month
+                </p>
+
+
+                <p>
+                    He has just bought a gadget and pays an EMI of Rs 2,000 per month for the same
+                </p>
+
+                <p>
+                    His proposed housing loan installment is Rs 15,000 per month
+                </p>
+
+                <p>
+                    When all his loan installments are divided by his monthly income, the FOIR is 50% or Rs 25,000
+                </p>
+
+                <p>
+                    Most lenders restrict the FOIR limit to a maximum of 50% of one's monthly income. It means that if
+                    one needs around 50% of his income to meet his personal expenses, the other half is committed
+                    towards fulfilling his fixed obligations, including the home loan.
+                </p>
+            </div>
+
+
+            <p class="step-sub-paragraph">
+                It is very important to understand and estimate your budget before you finalise on your property. It is
+                equally important to think of how you are going to finance your purchase. Would you be using your
+                savings or would you prefer to go the home loan way? Most people also choose the mid-way, that is, using
+                some amount of your savings and some amount as a loan to finance the property. Any of these solutions
+                work well for a homebuyer. However, most people do opt for home loans. One of the benefits of opting for
+                a home loan is that you can preserve your liquidity.
+            </p>
+
+            <p class="step-sub-paragraph-2">
+                What are the benefits of taking a home loan? For one, it is the cheapest loan available. But, the catch
+                is that everyone is not eligible for a home loan! Home loan eligibility depends not only on your salary
+                but other factors as well which we are going to discuss in this video.
+            </p>
+
+            <p class="step-sub-paragraph-3">
+                What is the logic behind banks calculating your home loan eligibility? Banks study your repayment
+                capacity before they roll out a loan for you. Suppose you are someone earning a lakh per month. A bank
+                will calculate with the logic that 50% of the income is spent on personal and other expenses while the
+                other 50% can be your savings or go into an investment.
+            </p>
+
+
+            <div class="step-12-paragraph">
+                <p>
+                    How to calculate home loan eligibility
+                </p>
+
+                <p>
+                    Calculating your home loan eligibility is simple with this formula:
+                </p>
+
+                <p>
+                    (Monthly fixed income * 50%)- other EMI payments/ EMI per lakh. This gives you the loan eligibility
+                    amount in lakh.
+                </p>
+
+                <p>
+                    Note that per lakh EMI varies depending upon the tenure of repayment that you choose. You will also
+                    be provided with an EMI chart which will clearly show you your monthly repayment over the years. For
+                    example, assuming that home loan interest is at 10.5% and the amount of loan is Rs 1 lakh, then your
+                    monthly EMI is as shown here:
+                </p>
+
+                <div class="step-12-main-sub-para">
+                    <p>
+                        We'll make it simpler for you. You can access the EMI calculator on Housing.com to arrive at the
+                        exact EMI amount you'll be paying every month over a period of time.
+                    </p>
+                    <p>
+                        Housing.com EMI Calculator can be accessed here:
+                    </p>
+                    <p>
+                        <a class="housing-link" href="https://housing.com/home-loans-emi-calculator"
+                            target="_blank">https://housing.com/home-loans-emi-calculator</a>
+                    </p>
+                </div>
+
+                <p>
+
+                    Factors that determine your home loan eligibility
+                </p>
+                <p>
+
+                    You would have clearly understood that your take-home salary is one of the top determinants to
+                    calculate your home loan eligibility. Let's look at some quantitative factors too:
+                </p>
+            </div>
+
+
+            <section class="step-13-ol-group">
+                <ul>
+                    <li>
+                        <h3>Loan to value ratio:</h3>
+                    <li>
+                        <p>Banks generally do not grant more than 80 per cent of the value of property as loan. This is
+                            called loan to value ratio. In short, if you are interested in buying a property worth Rs 1
+                            crore, the loan sanctioned will not be more than Rs 80 lakh. So how would you pay the rest
+                            of the Rs 20 lakh? This is where downpayment comes into the picture. Down Payment means you
+                            will have to pay the remainder from your pocket!</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Loan tenure:</h3>
+                    <li>
+                        <p>If you are opting for a long repayment tenure, there are chances you would be better
+                            positioned to avail a home loan. When the EMI burden is spread over a long tenure, the EMI
+                            is lower. Not just the tenure of loan repayment, your age will also matter! If you are 45,
+                            your working age is merely 15 more years and therefore your repayment can only be over the
+                            next 15 years. But suppose you are 25 -- you can spread your EMI burden over a longer
+                            period, that is 30 years and therefore higher chances of being eligible for a home loan.</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Interest rate:</h3>
+                    <li>
+                        <p>This is a top concern among all potential home buyers who are hunting for the right loans.
+                            Cheaper loans mean you have better chances of being eligible for a home loan and therefore
+                            you will find many praying for a pocket-friendly interest rate!</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Other EMIs:</h3>
+                    <li>
+                        <p>Are you paying other EMIs such as education loan or vehicle loan? Higher EMI outflows lower
+                            your chances of being eligible.</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Credit history:</h3>
+                    <li>
+                        <p>Your credit score is also important as it provides a look into your transaction and repayment
+                            history. If your credit score shows that you have defaulted, there is no chance you'll be
+                            eligible for a loan! So keep your score healthy. A score above 700 is considered good!</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Your qualifications:</h3>
+                    <li>
+                        <p>Your educational qualification, work experience, growth prospects, and stability are also
+                            equally important. Those who have professional degrees may be treated with better interest
+                            rates and may have a better chance at securing a home loan. Similarly, if you are working in
+                            a coveted field, you stand a good chance. Besides, your employer's reputation is also
+                            considered. Bigger companies promise lower interest rates!</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Family and work background:</h3>
+                    <li>
+                        <p>Can your family and background help your home loan eligibility? Banks categorize certain
+                            sectors as risky, for example, the BPOs. Apart from this, jobs or sectors where layoffs and
+                            attrition are high are also not given much consideration when it comes to eligibility. But
+                            suppose your family background is impressive and your family members are professionals -
+                            these details help banks assess your repayment capacity.</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Spending habits:</h3>
+                    <li>
+                        <p>Do you live life king size? This may not be good news for your bank. If you are someone used
+                            to spending a lot or have many dependents on you, you are a risky customer for the bank.</p>
+                    </li>
+                    </li>
+                    <li>
+                        <h3>Type of property:</h3>
+                    <li>
+                        <p>Type of property also determines your eligibility. In case of a ready-to-move property, you
+                            may get a loan, but in case of an under-construction property, loan roll out is dependent on
+                            the stage of construction. If you are looking to buy a property with a general power of
+                            attorney, bad news, because banks usually do not prefer financing such properties.</p>
+                    </li>
+                    </li>
+
+                    <li>
+                        <p>Summing this up for you:</p>
+                    </li>
+
+                    <li class="gap-li">Main factors that determine eligibility for home loan are:</li>
+                </ul>
+            </section>
+
+
+
+
+
+            <table class="step-4-custom-table">
+                <tr>
+                    <th>Age of the Applicant</th>
+                    <th>18 to 70 years</th>
+                </tr>
+                <tr>
+                    <td>Eligible Salary</td>
+                    <td>Rs. 25,000 per month and above</td>
+                </tr>
+                <tr>
+                    <td>Work Experience for Salaried</td>
+                    <td>3 years and above</td>
+                </tr>
+                <tr>
+                    <td>Business Stability for Self Employed</td>
+                    <td>5 years and above</td>
+                </tr>
+                <tr>
+                    <td>Minimum CIBIL Score</td>
+                    <td>650</td>
+                </tr>
+                <tr>
+                    <td>Maximum Loan on Property Value</td>
+                    <td>Up to 90%</td>
+                </tr>
+                <tr>
+                    <td>Maximum EMI as percent of income</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>Eligibility with Co-applicant</td>
+                    <td>Up to 3 earning family members may be added to get higher loan eligibility</td>
+                </tr>
+
+            </table>
+
+
+
+            <div class="step-14-paragraph">
+
+                <p>
+                    How to enhance your home loan eligibility
+                </p>
+                <div class="step-14-sub-para">
+                    <p>
+                        You might have already checked whether or not you are eligible for a home loan. The good news is
+                        there are ways to enhance your eligibility. Consider these quicks tips:
+                    </p>
+
+                    <ul class="step-14-ul">
+                        <li>
+                            Add a Joint applicant (spouse, blood relations) to show a higher joint income, hence better
+                            chance to avail a home loan.
+                        </li>
+                        <li>
+                            Add other incomes - yearly bonus, rent from property, FD interest. Remember to show proof of
+                            these incomes as well.
+                        </li>
+                        <li>
+                            Opt for a longer repayment tenure.
+                        </li>
+                        <li>
+                            Consider paying off all the other EMIs before applying for a home loan. This will give you
+                            more disposable income.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    So now that you know how to assess your eligibility, we hope it's happy home buying time for you! If
+                    you liked this video, do like and subscribe to Housing.com. Visit Housing.com Home Loans for more
+                    information and don't forget to share this video with friends!
+                </p>
+            </div>
+
+
+            <div class="asked-question-main">
+                <h1 class="asked-question-title">
+                    Frequently Asked Questions
+                </h1>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            How do I post a property for rent on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            What details should I include to advertise my property for sale on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            What are the benefits of posting a property on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            How do I post a property for rent on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            What details should I include to advertise my property for sale on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+
+                <div class="asked-question-container">
+                    <div class="asked-question-inner">
+                        <p class="asked-question">
+                            What are the benefits of posting a property on Realezi.com?
+                        </p>
+                        <img src="./img/down.png" alt="down" class="asked-inner-down" />
+                    </div>
+                    <div class="asked-answer">
+                        <p>To post a property for rent on Realezi.com, follow these steps</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="extra-line"> Banner Not Provided on Figma </p>
+
+            <h1 class="banner-title">Realezi banner download app</h1>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="footer-border"></div>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Community</h3>
+                <div class="underline-fot-content"></div>
+                <ul class="footer-list">
+                    <li><a href="#">Builders</a></li>
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Customers</a></li>
+                </ul>
+                <button class="refer-btn">
+                    Refer & Earn
+                    <img src="./img/btn-fire.png" alt="Refer & Earn"
+                        style="width: 20px; height: 20px; margin-right: 8px; margin-top: 5px;">
+                </button>
+
+                <p class="subscribe-page">
+                    Subscribe to our newsletter
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Solutions</h3>
+                <div class="solution-line"></div>
+                <ul class="footer-list-differnce">
+                    <div class="footer-sublist">
+                        <li><a href="#">Find a right property</a></li>
+                        <li><a href="#">Sell your property</a></li>
+                        <li><a href="#">Build your home from scratch</a></li>
+                        <li><a href="#">Interior Designing & Decor</a></li>
+                        <li><a href="#">Solar Panel</a></li>
+                    </div>
+                    <div class="footer-sublist">
+                        <li><a href="#">Bank Loans</a></li>
+                        <li><a href="#">Legal Aid</a></li>
+                        <li><a href="#">Porter Services</a></li>
+                        <li><a href="#">For Builders & Channel Partners</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Company</h3>
+                <div class="company-footer-line"></div>
+                <ul class="footer-list">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <button class="hiring-btn">
+                    We are hiring
+                    <img src="./img/party.png" alt="Refer & Earn"
+                        style="width: 20px; height: 20px; margin-right: 8px; margin-top: 5px;">
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-down-main">
+        <div class="footer-down-border"></div>
+    </div>
+
+    <div class="footer-down">
+        <div class="footer-down-sub">
+            <div class="footer-down-left">
+                <p class="footer-about">About Us</p>
+                <p class="footer-about-para">
+                    Join our referral program and earn rewards for every friend
+                    you bring to our design family. Share the joy of transforming
+                    spaces togetherJoin our referral program and earn rewards
+                    for every friend you bring to our design family.
+                </p>
+            </div>
+
+            <div class="footer-down-right">
+                <p class="footer-about-front">
+                    EXPERIENCE REALEZI APP ON MOBILE
+                </p>
+                <div class="footer-phone-store">
+                    <img src="./img/app.png" alt="play-store" class="footer-store-img">
+                    <img src="./img/google.png" alt="app-store" class="footer-store-img">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-last-containe">
+        <div class="footer-last">
+
+            <div class="footer-last-one">
+                <img src="./img/logo-footer.png" alt="footer-log" class="footer-logo" />
+            </div>
+
+            <div class="footer-last-two">
+                <div class="terms">
+                    <p>Privacy policies</p>
+
+                    <p>Terms and conditions</p>
+
+                    <p> Disclaimer</p>
+                </div>
+            </div>
+
+            <div class="footer-last-three">
+                <img src="./img/facebook.png" alt="facebook" class="social-media" />
+                <img src="./img/linkedin.png" alt="linkedin" class="social-media" />
+                <img src="./img/instagram.png" alt="instagram" class="social-media" />
+                <img src="./img/youtube.png" alt="youtube" class="social-media" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-down-main">
+        <div class="footer-down-border"></div>
+    </div>
+
+    <p class="company-rights">
+        ©2024 Realezi. All rights reserved
+    </p>
+
+
+
+
+
+    <script src="function.js"></script>
+</body>
+
+</html>
